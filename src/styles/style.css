@@ -13,6 +13,20 @@ p {
     max-width: 65ch;
 }
 
+
+/* variables */
+:root {
+--lightgreen: #A8BEAC;
+--green:#255D2F;
+--orange:#FF7548;
+--storfont:  "DM Sans", sans-serif;
+--lillefont: "Lexend Exa", sans-serif;
+--brodfont: "Open Sans", sans-serif;
+}
+
+
+
+
 @media screen and (min-width: 768px) {
 
 }
