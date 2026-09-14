@@ -4,7 +4,7 @@
 
 <header>
   <div>
-    <h1>Rådgivningen for dig der er berørt af misbrug</h1>
+    <h1>Rådgivningen for <br />dig der er berørt <br />af misbrug</h1>
     <p>Rådgivningen Orgeus er en frivilligdrevet, lansdækkende rådgivning til mennesker, der har misbrug og afhængighed tæt ind på livet.</p>
     <button>Tal med os</button>
   </div>
@@ -26,7 +26,6 @@
     font-size: larger;
     font-weight: light;
     margin-bottom: 20px;
-    width: 500px;
   }
   button {
     font-family: var(--lillefont);
@@ -37,7 +36,6 @@
     font-family: var(--storfont);
     font-size: 96px;
     font-weight: normal;
-    width: 900px;
     margin-bottom: 20px;
     margin-top: 100px;
   }
@@ -57,6 +55,10 @@
     scale: 1.1;
   }
 
-  @media screen and (min-width: 768px) {
+  /* @media mobil ver  */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 50px;
+    }
   }
 </style>
