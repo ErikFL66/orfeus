@@ -4,20 +4,24 @@ import Card from "../components/Card.astro";
 import Postkortet from "../images/vindue-et.jpg";
 import Postkortto from "../images/vindue-to.jpg";
 import Postkorttre from "../images/vindue-tre.jpg";
+import BrandingSection from "../components/BrandingSection.astro";
 ---
 
 <PageLayouts>
-	<div class="postkortblok"> 
-	<div class="tekstblok"> 
-	<h2>Der er mange af os, er du også pårørende?</h2>
-	<p>Mange af os føler os alene med vores oplevelser, men faktisk er hver anden af os pårørende til en misbruger. Her kan du derfor høre andres historier. </p>
-	</div>
+  <div class="postkortblok">
+    <div class="tekstblok">
+      <h2>Der er mange af os, er du også pårørende?</h2>
+      <p>Mange af os føler os alene med vores oplevelser, men faktisk er hver anden af os pårørende til en misbruger. Her kan du derfor høre andres historier.</p>
+    </div>
 
-	<div class="cards">
-		<Card headline="´Det er rart at tale med nogen der forstår´" text="Postkort fra en pårørende" image={Postkortet} />
-		<Card headline="´Man stopper aldrig med at være mor eller far´" text="Postkort fra en pårørende" image={Postkortto}/>
-		<Card headline="´Ingen skal stå alene´" text="Postkort fra en pårørende" image={Postkorttre}/>
-	</div>
-	</div>
+    <div class="cards">
+      <Card headline="´Det er rart at tale med nogen der forstår´" text="Postkort fra en pårørende" image={Postkortet} />
+      <Card headline="´Man stopper aldrig med at være mor eller far´" text="Postkort fra en pårørende" image={Postkortto} />
+      <Card headline="´Ingen skal stå alene´" text="Postkort fra en pårørende" image={Postkorttre} />
+    </div>
+  </div>
+
+  <div class="brandingSection">
+    <BrandingSection />
+  </div>
 </PageLayouts>
-
