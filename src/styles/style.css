@@ -33,7 +33,7 @@ svg {
 label {
   display: block;
 }
-  
+
 input,
 button,
 textarea,
@@ -58,31 +58,25 @@ select,
   appearance: base-select;
 }
 
-
-
 body {
   font-family: sans-serif;
   line-height: 1.25;
 }
 
 p {
-    max-width: 65ch;
+  max-width: 65ch;
 }
-
 
 /* variables */
 :root {
---lightgreen: #A8BEAC;
---green:#255D2F;
---orange:#FF7548;
---storfont:  "DM Sans", sans-serif;
---lillefont: "Lexend Exa", sans-serif;
---brodfont: "Open Sans", sans-serif;
+  --lightgreen: #a8beac;
+  --green: #255d2f;
+  --orange: #ff7548;
+  --white: #f8f8f8;
+  --storfont: "DM Sans", sans-serif;
+  --lillefont: "Lexend Exa", sans-serif;
+  --brodfont: "Open Sans", sans-serif;
 }
 
-
-
-
 @media screen and (min-width: 768px) {
-
 }
