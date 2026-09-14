@@ -75,10 +75,41 @@ p {
   --storfont: "DM Sans", sans-serif;
   --lillefont: "Lexend Exa", sans-serif;
   --brodfont: "Open Sans", sans-serif;
+  --h2-fontsize: 50px;
+}
+
+h2 {
+  font-family: var(--lillefont);
+}
+
+p {
+  font-family: var(--brodfont);
+}
+
+/* der er mange af os... */
+
+.postkortblok {
+  justify-self: center;
+  padding: 0 10%;
+}
+
+.tekstblok {
+  margin-block: 4rem;
+}
+
+.tekstblok p {
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 768px) {
+  h2 {
+    font-size: var(--h2-fontsize);
+  }
+
   .cards {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+    gap: 75px;
   }
 }
