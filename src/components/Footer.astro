@@ -1,11 +1,13 @@
 ---
+import { Image } from "astro:assets";
 
+import Graphic from "../images/logolang.svg";
 ---
 
 <footer>
     <div>
         <!-- spørg om det her -->
-        <img src="../images/logolang.svg" alt="orfeus logo" />
+         <Image src={Graphic} alt="Logo" />
         <p>Rådgivningen Orgeus er en frivilligdrevet, lansdækkende rådgivning til mennesker, der har misbrug og afhængighed tæt ind på livet.</p>
     </div>
     <div>
