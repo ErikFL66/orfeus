@@ -4,7 +4,7 @@
 
 <section>
   <div>
-    <h2>Det kan være svært at finde svarene alene</h2>
+    <h2>Det kan være svært at <br /> finde svarene alene</h2>
     <button>Skriv til os</button>
   </div>
 </section>
@@ -12,10 +12,37 @@
 <style>
   section {
     width: 100%;
-    min-height: 35vh;
+    min-height: fit-content;
     display: flex;
     align-items: center;
     background-color: #ccc;
+    justify-content: center;
+    background-color: var(--lightgreen);
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    margin-top: 120px;
+  }
+
+  button {
+    font-family: var(--lillefont);
+    background-color: var(--orange);
+    color: var(--white);
+  }
+  button {
+    margin-bottom: 120px;
+    width: auto;
+    padding-inline: 24px;
+    padding-block: 9px;
+    border-radius: 9px;
+    border: none;
+
+    font-weight: bold;
+    transition-duration: 0.4s;
+  }
+  button:hover {
+    scale: 1.1;
   }
 
   div {
