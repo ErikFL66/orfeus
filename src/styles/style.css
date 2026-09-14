@@ -80,6 +80,7 @@ p {
 
 h2 {
   font-family: var(--lillefont);
+  font-weight: 500;
 }
 
 p {
