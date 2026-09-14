@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import Logo from "../images/logolang.svg";
 ---
-
+<body>
 <footer>
     <div>
         <!-- spørg om det her -->
@@ -10,11 +10,17 @@ import Logo from "../images/logolang.svg";
         <p>Rådgivningen Orgeus er en frivilligdrevet, lansdækkende rådgivning til mennesker, der har misbrug og afhængighed tæt ind på livet.</p>
     </div>
     <div>
+        <h2>Sociale medier</h2>
+        <p>Facebook</p>
+        <p>Instagram</p>
+    </div>
+    <div>
         <h2>Kontakt</h2>
         <p>MAIL: kontakt@raadgivningen-orfeus.dk</p>
         <p>TLF: 70604640</p>
     </div>
 </footer>
+</body>
 
 <style>
     footer {
@@ -23,13 +29,18 @@ import Logo from "../images/logolang.svg";
         display: grid;
         grid-template-columns: 1fr;
         padding: 10% 10% 0 10%;
-        background-color: #444;
-        color: #fff;
+        background-color: var(--lightgreen);
+        color: var(--green);
+        font-family: var(--brodfont);
+    }
+    img {
+        width: 600px;
+        height: auto;
     }
     /*  */
     @media screen and (min-width: 768px) {
         footer {
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 2fr 1fr 1fr;
         }
     }
 </style>
