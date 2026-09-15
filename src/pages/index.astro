@@ -5,6 +5,8 @@ import Postkortet from "../images/vindue-et.jpg";
 import Postkortto from "../images/vindue-to.jpg";
 import Postkorttre from "../images/vindue-tre.jpg";
 import BrandingSection from "../components/BrandingSection.astro";
+import postkortvideo from "../images/postkortvideo-mock.jpg";
+import { Image } from "astro:assets";
 ---
 
 <PageLayouts>
@@ -26,9 +28,30 @@ import BrandingSection from "../components/BrandingSection.astro";
   </div>
 
   <div class="tekstblok postkortblok">
-      <h2>Vil du skrive et postkort fra en pårørende?</h2>
-      <p>Som en del af vores nye synligheds kampagne rækker vi ud til folk ved at fortælle dem om vores historier, så vi kan hjælpe hinanden sammen. 
-Vil du være med, så fortæl os din historie på kontakt@raadgivningen-orfeus.dk</p>
+    <h2>Vil du skrive et postkort fra en pårørende?</h2>
+    <p>Som en del af vores nye synligheds kampagne rækker vi ud til folk ved at fortælle dem om vores historier, så vi kan hjælpe hinanden sammen. <br /> Vil du være med, så fortæl os din historie på kontakt@raadgivningen-orfeus.dk</p>
+    <div class="video">
+      <Image src={postkortvideo} alt="Postkort fra en pårørende" />
     </div>
+  </div>
 
+  <style>
+    .tekstblok p {
+      margin-bottom: 40px;
+    }
+    .video {
+      margin: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+      .video {
+        width: 70%;
+      }
+
+      .tekstblok p {
+        max-width: none;
+        margin-bottom: 70px;
+      }
+    }
+  </style>
 </PageLayouts>
