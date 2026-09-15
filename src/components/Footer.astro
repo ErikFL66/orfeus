@@ -4,44 +4,75 @@ import Logo from "../images/logolang.svg";
 ---
 
 <body>
-    <footer>
-        <div>
-            <!-- spørg om det her -->
-            <Image src={Logo} alt="logo" />
-            <p>Rådgivningen Orgeus er en frivilligdrevet, lansdækkende rådgivning til mennesker, der har misbrug og afhængighed tæt ind på livet.</p>
+  <footer>
+    <div class="all">
+      <div>
+        <!-- spørg om det her -->
+        <Image src={Logo} alt="logo" />
+        <div class="imgtext">
+          <p>Rådgivningen Orgeus er en frivilligdrevet, lansdækkende rådgivning til mennesker, der har misbrug og afhængighed tæt ind på livet.</p>
         </div>
-        <div>
-            <h3>Sociale medier</h3>
-            <p>Facebook</p>
-            <p>Instagram</p>
+      </div>
+      <div class="notsure">
+        <div class="socialMedia">
+          <h3>Sociale medier</h3>
+          <p>Facebook</p>
+          <p>Instagram</p>
         </div>
-        <div>
-            <h3>Kontakt</h3>
-            <p>MAIL: kontakt@raadgivningen-orfeus.dk</p>
-            <p>TLF: 70604640</p>
+        <div class="kontaker">
+          <h3>Kontakt</h3>
+          <p><span>MAIL:</span> kontakt@raadgivningen-orfeus.dk</p>
+          <p><span>TLF:</span> 70604640</p>
         </div>
-    </footer>
+      </div>
+    </div>
+  </footer>
 </body>
 
 <style>
-    footer {
-        width: 100%;
-        height: 50vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 10% 10% 0 10%;
-        background-color: var(--lightgreen);
-        color: var(--green);
-        font-family: var(--brodfont);
+  footer {
+    padding: 0 10%;
+    background-color: var(--lightgreen);
+    color: var(--green);
+    font-family: var(--brodfont);
+  }
+  img {
+    width: 350px;
+    height: auto;
+  }
+
+  span {
+    font-weight: bolder;
+  }
+  div {
+    margin-top: 30px;
+  }
+  .socialMedia p {
+    text-decoration: underline;
+    margin-bottom: 2px;
+  }
+  .kontaker p {
+    margin-bottom: 2px;
+  }
+
+  .all {
+    /* margin-block: 50px; */
+    padding-block: 45px;
+  }
+  .imgtext {
+    margin-top: 15px !important;
+  }
+  /*  */
+  @media screen and (min-width: 768px) {
+    .all {
+      display: flex;
+      justify-content: space-between;
     }
-    img {
-        width: 600px;
-        height: auto;
+    .notsure {
+      margin-top: -0px;
     }
-    /*  */
-    @media screen and (min-width: 768px) {
-        footer {
-            grid-template-columns: 2fr 1fr 1fr;
-        }
+    .all {
+      padding-block: 50px;
     }
+  }
 </style>
