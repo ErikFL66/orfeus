@@ -7,38 +7,37 @@ import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Exa:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-
-        <title>Orfeus</title>
-    </head>
-    <body>
-        <nav>
-            <Image src={Logo} alt="logo" />
-        </nav>
-        <Header />
-        <slot />
-        <Footer />
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Exa:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Orfeus</title>
+  </head><body>
+    <nav>
+      <Image src={Logo} alt="logo" />
+    </nav>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
 </html>
 
 <style>
-    nav{
-        width: 200px;
-        padding: 20px;
-    }
+  nav {
+    width: 200px;
+    padding: 20px;
+  }
 
-    @media screen and (min-width:768px) {
-        nav{
-        width: 400px;
-        }
-        
+  @media screen and (min-width: 768px) {
+    nav {
+      width: 400px;
     }
+  }
 </style>
